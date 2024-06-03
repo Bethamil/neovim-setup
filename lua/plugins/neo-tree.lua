@@ -14,6 +14,14 @@ return {
     },
   },
   config = function()
+    local neotree = require("neo-tree")
+    neotree.setup({
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+        },
+      },
+    })
     vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
   end,
 }
