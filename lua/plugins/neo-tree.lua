@@ -20,6 +20,10 @@ return {
         filtered_items = {
           hide_dotfiles = false,
         },
+        follow_current_file = {
+          enabled = true,
+          leave_dirs_open = false,
+        },
       },
     })
     vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle left<CR>", {})
