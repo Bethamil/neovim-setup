@@ -13,6 +13,7 @@ return {
 					"lua_ls",
 					"pylsp",
 					"tsserver",
+          "intelephense",
 				},
 			})
 		end,
